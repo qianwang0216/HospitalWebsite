@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DB_69755_aspclass" Class="rssfeedDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=tcp:s10.winhost.com;Initial Catalog=DB_69755_aspclass;Integrated Security=False;User ID=DB_69755_aspclass_user" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DB_69755_aspclassConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.rss" Member="rsses">
+    <Type Name="rss">
+      <Column Name="rss_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rss_title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="rss_url" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

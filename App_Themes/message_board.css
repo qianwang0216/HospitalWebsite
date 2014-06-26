@@ -1,0 +1,10 @@
+﻿.PrettyGrid
+{
+  width: 100%;
+}
+
+.PrettyGrid table
+{
+  border: solid 1px #CCCCCC;
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="PROGRAMS"  description="This is the Programs in Nipigon">
+    <siteMapNode url="" title="Volunteer"  description="This is the Volunteer jobs in Nipigon" />
+    <siteMapNode url="" title="Assisted Livingr"  description="This is the Assisted Living page of the Nipigon" />
+    <siteMapNode url="" title="Meals On Wheels"  description="This is the Meals On Wheels page of the Nipigon" />
+    <siteMapNode url="" title="Medical Day Care"  description="This is the Medical Day Care page of the Nipigon" />
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="#" title=""  description="">
+      <siteMapNode url="~/index.aspx" title="HOME"  description="NIPIGON DISTRICT MEMORIAL HOSPITAL" />
+      <siteMapNode siteMapFile="aboutUs.sitemap" />
+      <siteMapNode siteMapFile="services.sitemap" />
+      <siteMapNode siteMapFile="programs.sitemap" />
+      <siteMapNode siteMapFile="patients.sitemap" />
+      <siteMapNode siteMapFile="visitors.sitemap" />
+      <siteMapNode siteMapFile="careers.sitemap" />
+      <siteMapNode siteMapFile="contactUs.sitemap" />  
+    </siteMapNode>
+</siteMap>

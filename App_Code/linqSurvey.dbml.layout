@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.625, 8.5" name="linqSurvey">
+  <DataContextMoniker Name="/linqSurveyDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c6a47f79-6bfb-4a31-b0ba-70a0557847bc" absoluteBounds="6, 0.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/linqSurveyDataContext/surveypart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0d3e4601-d0ad-4014-9d26-81f8e7c65a6a" absoluteBounds="6.015, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f9265142-52bd-4bd3-ab45-2adf6fea3fdd" absoluteBounds="3.5, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/linqSurveyDataContext/question" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fdb68062-0e67-4ea6-8c12-0d8bcb90d8ed" absoluteBounds="3.515, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c56573dc-9aa4-4e24-ac38-b5fd1a18064e" absoluteBounds="2.25, 4.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/linqSurveyDataContext/surveyquestion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9de5ac2-8411-4da6-8547-e7aee956adcb" absoluteBounds="2.265, 5.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="458897bb-83fe-4ae5-a2f1-26560bd44c2b" absoluteBounds="0.5, 1.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/linqSurveyDataContext/Survey" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d10af729-bd24-44ed-8d29-fb6ddee3aae2" absoluteBounds="0.51499999999999968, 1.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.875 : 2.07859537760417); (3.875 : 4.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqSurveyDataContext/question/question_surveyquestion" />
+      <nodes>
+        <classShapeMoniker Id="f9265142-52bd-4bd3-ab45-2adf6fea3fdd" />
+        <classShapeMoniker Id="c56573dc-9aa4-4e24-ac38-b5fd1a18064e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.3749995 : 3.28049967447917); (1.3749995 : 5.41429768880208); (2.25 : 5.41429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqSurveyDataContext/Survey/Survey_surveyquestion" />
+      <nodes>
+        <classShapeMoniker Id="458897bb-83fe-4ae5-a2f1-26560bd44c2b" />
+        <classShapeMoniker Id="c56573dc-9aa4-4e24-ac38-b5fd1a18064e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="5c0c9cda-349f-4b30-9e10-489a175760b8" absoluteBounds="9.375, 0.5, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/linqSurveyDataContext/survpart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d223996-2fd6-4f0a-8a66-41e3012b3416" absoluteBounds="9.39, 0.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bdc18f45-c953-48c8-8f01-891c5f1af059" absoluteBounds="6, 3.625, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/linqSurveyDataContext/surveyresponse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="afc55a4f-2344-4297-9ae0-6f433d824e9d" absoluteBounds="6.015, 4.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.90625 : 2.07859537760417); (4.90625 : 4.09375); (6 : 4.09375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqSurveyDataContext/question/question_surveyresponse" />
+      <nodes>
+        <classShapeMoniker Id="f9265142-52bd-4bd3-ab45-2adf6fea3fdd" />
+        <classShapeMoniker Id="bdc18f45-c953-48c8-8f01-891c5f1af059" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(0.90624725 : 3.28049967447917); (0.90624725 : 3.8281225); (1.29166616666667 : 3.8281225 : JumpStart); (1.45833283333333 : 3.8281225 : JumpEnd); (3.79166666666667 : 3.8281225 : JumpStart); (3.95833333333333 : 3.8281225 : JumpEnd); (4.82291666666667 : 3.8281225 : JumpStart); (4.98958333333333 : 3.8281225 : JumpEnd); (6 : 3.8281225)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqSurveyDataContext/Survey/Survey_surveyresponse" />
+      <nodes>
+        <classShapeMoniker Id="458897bb-83fe-4ae5-a2f1-26560bd44c2b" />
+        <classShapeMoniker Id="bdc18f45-c953-48c8-8f01-891c5f1af059" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

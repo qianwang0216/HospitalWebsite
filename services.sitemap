@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/services.aspx" title="SERVICES"  description="This is the Services in Nipigon" >
+    <siteMapNode url="" title="Alternate Level of Care"  description="This is the Alternate Level of Care page of the Nipigon" />
+    <siteMapNode url="" title="Diagnostic Imaging"  description="This is the Diagnostic Imaging page of the Nipigon" />
+    <siteMapNode url="" title="Lab"  description="This is the Lab page of the Nipigon" />
+    <siteMapNode url="" title="Physiotherapy"  description="This is the Physiotherapy page of the Nipigon" />
+    <siteMapNode url="" title="Respite Care"  description="This is the Respite Care page of the Nipigon" />
+    <siteMapNode url="" title="Ontario Telemedican"  description="This is the Ontario Telemedican page of the Nipigon" />
+  </siteMapNode>
+</siteMap>

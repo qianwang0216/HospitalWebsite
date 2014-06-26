@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title="CONTACT US"  description=" You can contact us anytime you want">
+      <siteMapNode url="~/contactUs/polls.aspx" title="Polls"  description="This is polls page" />
+      <siteMapNode url="~/contactUs/feedback.aspx" title="Feedback"  description="This page can help us to improve our services" />
+    </siteMapNode>
+</siteMap>

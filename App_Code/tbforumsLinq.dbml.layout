@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="tbforumsLinq">
+  <DataContextMoniker Name="/tbforumsLinqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bc3e30b8-bb3c-4a8d-97ba-5ef0fb7dd532" absoluteBounds="5.375, 2.375, 2, 1.7855859375">
+      <DataClassMoniker Name="/tbforumsLinqDataContext/tb_forums" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b31662e1-8431-4523-b8af-515d9d5e2f43" absoluteBounds="5.39, 2.835, 1.9700000000000002, 1.2255859375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

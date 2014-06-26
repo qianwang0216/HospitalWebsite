@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%= pp_masterTitle %></title>
+    <link href="scripts/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="scripts/themes/base/jquery.ui.accordion.css" rel="stylesheet" />
+    <%-- The code below is because this master page is used in different files in different folder lever, need to get the correct path --%>
+    <script src='<%# this.Page.ResolveUrl("~/scripts/jquery-1.10.2.js") %>'></script>
+    <script src='<%# this.Page.ResolveUrl("~/scripts/ui/jquery.ui.core.js") %>'></script>
+    <script src='<%# this.Page.ResolveUrl("~/scripts/ui/jquery.ui.widget.js") %>'></script>
+    <script src='<%# this.Page.ResolveUrl("~/scripts/ui/jquery.ui.accordion.js") %>'></script>
+    <script>
+        $(function () {
+            $("#news_accordion").accordion({
+                heightStyle: "fill",
+                icons: null
+            });
+        });
+	</script>
+    <script>
+        function toggleMenu() {
+            //$("#menu").find("nav").toggle();
+            $("#collapsemenu").slideToggle(500);
+        }
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Vidaloka' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Carme' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css' />
+   <asp:ContentPlaceHolder id="cph_head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        <header>
+
+            <asp:ContentPlaceHolder ID="cph_header" runat="server">
+                <div id="collapsemenu">
+                    <asp:SiteMapDataSource ID="sds_menu" runat="server" ShowStartingNode="false" />
+                    <asp:TreeView ID="trv_collapsemenu" runat="server" DataSourceID="sds_menu" ExpandDepth="1" OnDataBound="trv_collapsemenu_DataBound" NodeStyle-CssClass="collapsedmenunode" />
+            
+                </div>
+                <div id="logo_login">
+                    <div id="logo">
+                        <a href="index.aspx"><asp:Image ID="img_logo" runat="server" AlternateText="Nipigon Logo" ImageUrl="~/App_Themes/Theme/img/logo1.png" CssClass="img_logo"/></a>
+                    </div>
+                    <div id="login_buttons">
+                        <div id="loginstatus">
+                            <asp:LoginView ID="lgv_main" runat="server">
+                                <LoggedInTemplate>
+                                    Welcome <%= getCurrentUserFullName() %>! 
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                        </div>
+                        <div id="header_buttons">
+
+                                <asp:HyperLink ID="hpl_donation" runat="server" Text="Donation" NavigateUrl="#"
+                                     CssClass="donatinBtn" Target="_self" />
+
+                                <asp:LoginStatus ID="lgs_main" runat="server" CssClass="loginBtn"/>
+
+
+                                <a onclick="toggleMenu()" class="collapsMenuBtn">Menu</a>
+
+                        </div>  
+                    </div>
+                </div>
+                <div id="menu">
+                    <nav>
+                              
+                        <asp:Menu ID="menu_top" runat="server" DataSourceID="sds_menu" Orientation="Horizontal" CssClass="dropdownmenuitem" StaticEnableDefaultPopOutImage="false" />
+                    </nav>
+                </div>                
+            </asp:ContentPlaceHolder>
+            
+            
+                <asp:ContentPlaceHolder ID="cph_nav" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+            
+
+        </header>
+
+        <aside>
+
+            <asp:ContentPlaceHolder ID="cph_asid" runat="server">
+
+                    <div class="lbl_newsEvents">
+                        <asp:Image ID="img_quickLink" runat="server" AlternateText="News & Events" ImageUrl="~/App_Themes/Theme/img/quickLink.png" 
+                            CssClass="img_quickLink" />
+                        <asp:Label ID="lbl_quickLink" runat="server" Text="NEWS & EVENTS"  CssClass="lbl_quickLink" />
+                    </div>
+
+                    <div  class="newsEvents">
+                        <div id="news_accordion">
+                            <asp:Literal ID="ltl_news_accordion" runat="server" />
+                        </div>
+                    </div>
+
+                    <div class="q_link1">
+                        <asp:Image ID="img_quickSearch" runat="server" AlternateText="Quick Search" ImageUrl="~/App_Themes/Theme/img/quickLink.png" 
+                            CssClass="img_quickLink" />
+                        <asp:Label ID="lbl_quickSearch" runat="server" Text="QUICK SEARCH"  CssClass="lbl_quickLink" />
+                    </div>
+                    <div class="q_link2">
+                        <div id="googleSearch">
+                            <asp:TextBox ID="txt_search" runat="server" SkinID="searcheng"  placeholder=" please enter your keyword(s)" />
+                        </div>
+                        <div id="btn_googleSearch">
+                            <asp:ImageButton ID="img_search" runat="server" AlternateText="Search Button"
+                                ImageUrl="~/App_Themes/Theme/img/search.png" OnCommand="searchData" />
+                        </div>
+                    </div>
+
+                    
+             
+            </asp:ContentPlaceHolder>
+
+        </aside>
+
+        <section>
+
+            <asp:ContentPlaceHolder ID="cph_section" runat="server">
+        
+            </asp:ContentPlaceHolder>
+
+        </section>
+
+        <footer>
+            <asp:ContentPlaceHolder ID="cph_footer" runat="server">
+
+                <div id="requiredNav">
+
+                    <div id="requiredNav_left">
+                        <h6>&copy; 2014 PROVIDED BY HUMBER STUDENTS.</h6>
+                        <h6> ALL RIGHT RESERVED.</h6>
+                    </div>
+
+                    <div id="requiredNav_right">
+                        <table>
+                            <tr class="bottomNav" >
+                                <td><a href="../index.aspx">HOME</a></td>
+                                <td><a href="../visitors/donate.aspx">DONATE</a></td>
+                                <td><a href="../privacy.aspx">PRIVACY</a></td>
+                            </tr>
+                            <tr class="bottomNav">
+                                <td><a href="../aboutUs/history.aspx">HISTORY</a></td>
+                                <td><a href="../careers/job_listing.aspx">CAREERS</a></td>
+                                <td><a href="../terms.aspx">TERMS OF USE</a></td>
+                            </tr>
+                            <tr class="bottomNav">
+                                <td><a href="../contactUs/feedback.aspx">CONTACT US</a></td>
+                                <td><a href="../aboutUs/board_of_directors.aspx">BORD OF DIRECTORS</a></td>
+                                <td><a href="../contactUs/rssfeed.aspx">RSS</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="mobile_footer">
+                        <table>
+                            <tr class="bottomNav">
+                                <td><a href="../contactUs/feedback.aspx">CONTACT US</a></td>
+                                <td><a href="../aboutUs/board_of_directors.aspx">BORD OF DIRECTORS</a></td>
+                                <td><a href="../contactUs/rssfeed.aspx">RSS</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="studentTag">
+                        <h6> THIS IS NOT A REAL WEBSITE. THIS WEB SITE IS A STUDENT PROJECT FOR THE WEB DEVELOPMENT PROGRAM OF HUMBER COLLEGE.</h6>
+                    </div>
+
+                </div>
+
+            </asp:ContentPlaceHolder>
+        </footer>
+
+    </div>
+    </form>
+</body>
+</html>

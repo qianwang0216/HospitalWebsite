@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="linqForumInfosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=tcp:s10.winhost.com;Persist Security Info=True;User ID=DB_69755_aspclass_user" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DataSourceConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.View_forum" Member="View_forum">
+    <Type Name="View_forum">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="hf_nums" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dates" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="forum_style" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="contents" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="first_forum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

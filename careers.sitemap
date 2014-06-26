@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="CAREERS"  description="This is the Careers webpage of Nipigon" >
+    <siteMapNode url="~/careers/job_application.aspx" title="Job Application"  description="You can send us your resume for us" />
+    <siteMapNode url="~/careers/job_listing.aspx" title="Job Listing"  description=" See our available jobs" />
+  </siteMapNode>
+</siteMap>

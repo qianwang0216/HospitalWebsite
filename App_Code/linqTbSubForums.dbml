@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="linqTbSubForumsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=tcp:s10.winhost.com;Persist Security Info=True;User ID=DB_69755_aspclass_user" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DataSourceConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tb_Sub_forums" Member="tb_Sub_forums">
+    <Type Name="tb_Sub_forums">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="forumid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="styleid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="contents" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="dates" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="authorid" Type="System.Guid" DbType="UniqueIdentifier" CanBeNull="true" />
+      <Column Name="first_forum" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

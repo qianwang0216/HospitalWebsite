@@ -1,0 +1,17 @@
+﻿.Rep_tab{
+width:100%;
+margin: 0px auto;
+font: Georgia 11px;
+font-size: 12px;
+font-family: Tahoma, Arial, Helvetica, Sans-serif, Times New Roman;
+color:#333333;
+text-align:center;
+vertical-align:middle;
+border-collapse:collapse;
+}
+
+/* Repeater - Table - td style */
+.Rep_tab td {
+border:1px solid #4d9ab0;
+height:25px;
+}

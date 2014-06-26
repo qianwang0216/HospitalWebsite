@@ -1,0 +1,12 @@
+Nipigon District Memorial Hospital Project
+
+URL : http://tundeobatayo.name [PUBLIC]
+URL : http://tundeobatayo.name/administrative/admin_login.aspx [ADMIN]
+
+PUBLIC USER LOGIN DETAIL
+username : benmo
+password : P@55word
+
+ADMIN USER LOGIN DETAIL
+username : teezel
+password: Tundeomoba7!

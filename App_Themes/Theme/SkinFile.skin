@@ -1,0 +1,6 @@
+﻿
+<%-- Master Page --%>
+<asp:Label runat="server" ForeColor="red" Font-Names="Arial" Font-Size="small"  Font-Bold="true" SkinID="telCenter" />
+<asp:Label runat="server" Font-Size="small" SkinID="lbl_search" />
+<asp:TextBox runat="server" Font-Names="Alegreya Sans SC"  BorderColor="#F2ECE8" BackColor="#F2ECE8" Width="210" height="27" BorderWidth="1" SkinID="searcheng" />
+

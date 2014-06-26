@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="linqJobType">
+  <DataContextMoniker Name="/linqJobTypeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="9c79af78-bfae-4700-9d03-dae5a13658a7" absoluteBounds="3, 1.625, 2, 1.1111067708333333">
+      <DataClassMoniker Name="/linqJobTypeDataContext/job_type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17b2740a-3e97-4f0d-853e-87f8ee5d5b4a" absoluteBounds="3.0149999999999997, 2.085, 1.9700000000000002, 0.55110677083333326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

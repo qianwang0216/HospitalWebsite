@@ -1,0 +1,51 @@
+﻿.tblAppointment {
+    padding-top: 5px;
+    min-width: 600px;
+    border-top: 1px solid #96C2AA;
+}
+
+    .tblAppointment td {
+        padding: 5px;
+    }
+
+    .tblAppointment select {
+        min-width: 150px;
+    }
+
+.tblth {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+#menutab .selected {
+    background-color:#96C2AA; 
+}
+
+#menutab .static {
+    color: black; 
+}
+
+#menutab li a{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin: 5px;
+}
+
+.tblDocList, .tblDocTimeslot {
+    padding-top: 5px;
+    min-width: 600px;
+}
+
+    .tblDocList td {
+        padding: 5px;
+    }
+
+    .tblDocTimeslot select {
+        min-width: 150px;
+    }
+    .tblDocTimeslot td {
+        padding: 5px;
+    }

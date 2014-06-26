@@ -1,0 +1,68 @@
+﻿body, div, span, h1, a, img, form, label, 
+ tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%; /* = 1em = 16px */
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset */
+
+body{
+font: normal 14px Georgia, "Helvetica Neue", Helvetica, Arial, sans-serif;	
+}
+.centeralign {
+text-align:center;
+}
+.validatefail {
+color:red;
+}
+.tablelable {
+text-align: right;
+width: 30%;
+padding-right:10px;
+font-weight: bold;
+vertical-align: middle;
+}
+.container {
+width: 960px;
+margin: 0 auto;
+}
+.gridcell {
+padding: 5px;
+text-align: center;
+}
+.an_img {
+max-width: 800px;
+}
+.an_title {
+width: 800px;
+}
+.accordion_news_detail {
+width: 800px;
+padding: 10px;
+}
+
+    .accordion_news_detail h1 {
+        margin-bottom: 5px;
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.25;
+    }
+
+    .accordion_news_detail .an_posttime {
+        font-size: 10px;
+        line-height: 18px;
+        margin-bottom: 16px;
+        margin-top: 0;
+        border-bottom: 2px solid;
+    }

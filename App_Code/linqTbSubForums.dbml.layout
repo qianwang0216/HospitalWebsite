@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="linqTbSubForums">
+  <DataContextMoniker Name="/linqTbSubForumsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5dd30162-a637-4dd9-a0ac-049bca27b5e0" absoluteBounds="3.375, 1.5, 2, 2.1228255208333335">
+      <DataClassMoniker Name="/linqTbSubForumsDataContext/tb_Sub_forums" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa359219-7cb8-49e4-82de-c8c216ed7fd1" absoluteBounds="3.3899999999999997, 1.96, 1.9700000000000002, 1.5628255208333335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

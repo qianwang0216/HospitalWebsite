@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+        <siteMapNode url="~/administrative/admin_users.aspx" title="Users Management"  description="" />
+        <siteMapNode url="~/administrative/admin_news_accordion.aspx" title="Accordion News"  description="" />
+        <siteMapNode url="~/administrative/admin_news_ticker.aspx" title="Ticker News"  description="" />
+        <siteMapNode url="~/administrative/admin_homepage_imageslider.aspx" title="Homepage Image Slider"  description="" />
+        <siteMapNode url="~/administrative/admin_feedback.aspx" title="Feedback of Patients"  description="" />
+        <siteMapNode url="~/administrative/admin_rssfeed.aspx" title="RSS Feed"  description="" />
+        <siteMapNode url="~/administrative/admin_appointment.aspx" title="Appointments"  description="" />
+    </siteMapNode>
+</siteMap>

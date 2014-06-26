@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="PATIENTS"  description="This is the Services for patients and visitors in Nipigon" >
+    <siteMapNode url="" title="Accessibility"  description="Accessibility page" />
+    <siteMapNode url="" title="Commitment to Privacy"  description="Commitment to Privacy page" />
+    <siteMapNode url="" title="Infection Prevention &amp; Control"  description="Infection Prevention and Control page" />
+    <siteMapNode url="~/patients/book_appointment.aspx" title="Book Appointment"  description="You can book your appointmnet" />
+  </siteMapNode>
+</siteMap>

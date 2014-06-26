@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="administrative_AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../App_Themes/AdminStyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+    <div id="admin-header">
+        <asp:ContentPlaceHolder id="cph_header" runat="server">
+                <div id="logo">
+                    <a href="admin_index.aspx">
+                <asp:Image ID="img_logo" runat="server" AlternateText="Nipigon Logo" ImageUrl="~/App_Themes/Theme/img/logo1.png"/>
+                        </a>
+                </div>
+            <div class="floatright alignright">
+                <asp:LoginStatus ID="lgs_main" runat="server" LogoutPageUrl="~/administrative/admin_index.aspx" /><br />
+                <h3>Nipigon District Memorial Hospital Administration</h3>
+            </div>        
+        </asp:ContentPlaceHolder>
+    </div>
+        <div id="wrapper">
+    <div id="admin-menusidebar">
+        <asp:ContentPlaceHolder id="cph_menusidebar" runat="server">
+            <asp:SiteMapDataSource SiteMapProvider="adminSite" runat="server" ID="sdsAdmin" ShowStartingNode="False" />
+            <asp:Menu DataSourceID="sdsAdmin" ID="mnu_admin" runat="server" StaticDisplayLevels="2" StaticSelectedStyle-BackColor="#00acef" StaticMenuItemStyle-CssClass="admin-menu-item" />
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="admin-content">
+        <asp:ContentPlaceHolder id="cph_content" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            </div>
+        <div id="admin-footer">
+            <asp:ContentPlaceHolder id="cph_footer" runat="server">
+                <br />
+                     <div>
+                        <h6> &copy; 2014 PROVIDED BY HUMBER STUDENTS. ALL RIGHT RESERVED.
+                         <a href="../privacy.aspx">PRIVACY</a> | <a href="../terms.aspx">TERMS OF USE</a></h6> 
+                    </div>
+
+                    <div id="studentTag">
+                        <h6> THIS IS NOT A REAL WEBSITE. THIS WEB SITE IS A STUDENT PROJECT FOR THE WEB DEVELOPMENT PROGRAM OF HUMBER COLLEGE.</h6>
+                    </div>                       
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+</body>
+</html>

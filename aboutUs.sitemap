@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="ABOUT US"  description="This page isaAbout Nipigon and our istory" >
+    <siteMapNode url="" title="Vision"  description="This is our Vision, Mission, and Values of Nipigon" />
+    <siteMapNode url="" title="History"  description="This is the History of Nipigon" />
+    <siteMapNode url="" title="Board of Directors"  description="This is the Board of Directors in Nipigon" />
+  </siteMapNode>
+</siteMap>

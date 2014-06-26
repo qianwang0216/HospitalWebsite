@@ -1,0 +1,82 @@
+﻿                              /*-------------------------------- Rss Pubic -------------------------------- */
+
+#fieldset_rss {
+    width: 90%;
+    font-size: 15px;
+    color: #808080;
+    float: left;
+    clear: both;
+}
+
+.row_header {
+    height: 50px;
+    background-color: #82C1A9;
+    font: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.row_header th {
+    padding: 20px 0px;
+}
+
+.rsstable_td {
+    padding: 10px 20px;
+    border-bottom: 1px dashed #00AEEF;
+    font-size: 14px;
+}
+
+#content_img {
+    float: left;
+}
+
+#content_label {
+    margin: 25px 0 0 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #96C2AA;
+    float: left;
+}
+
+#content_rss {
+    margin: 10px 0 0 10px;
+    float: left;
+    clear: both;
+}
+
+                              /*-------------------------------- Rss Admin -------------------------------- */
+
+.fieldsetRss_admin {
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+.contentRss_admin {
+    margin: 30px 50px;
+    float: left;
+    clear: both;
+}
+
+.headerRow_admin {
+    width: 100%;
+    padding: 15px;
+    background-color: #82C1A9;
+    font: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.headerRow_admin th {
+    padding: 15px;
+}
+
+.lbl_msg {
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+    color: #fa6c6c;
+    float: left;
+    clear: both;
+}
+

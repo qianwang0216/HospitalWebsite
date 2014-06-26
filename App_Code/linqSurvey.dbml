@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DB_69755_aspclass" Class="linqSurveyDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=tcp:s10.winhost.com;Initial Catalog=DB_69755_aspclass;Integrated Security=False;User ID=DB_69755_aspclass_user" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DB_69755_aspclassConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.surveypart" Member="surveyparts">
+    <Type Name="surveypart">
+      <Column Name="SurveyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QuestionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrderId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Text" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="QuestionType" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Options" Type="System.String" DbType="VarChar(2000) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.questions" Member="questions">
+    <Type Name="question">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="QuestionType" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Options" Type="System.String" DbType="VarChar(2000) NOT NULL" CanBeNull="false" />
+      <Association Name="question_surveyquestion" Member="surveyquestions" ThisKey="Id" OtherKey="QuestionID" Type="surveyquestion" />
+      <Association Name="question_surveyresponse" Member="surveyresponses" ThisKey="Id" OtherKey="QuestionID" Type="surveyresponse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.surveyquestions" Member="surveyquestions">
+    <Type Name="surveyquestion">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SurveyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QuestionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrderId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="question_surveyquestion" Member="question" ThisKey="QuestionID" OtherKey="Id" Type="question" IsForeignKey="true" />
+      <Association Name="Survey_surveyquestion" Member="Survey" ThisKey="SurveyID" OtherKey="Id" Type="Survey" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Surveys" Member="Surveys">
+    <Type Name="Survey">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ExpiresOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Publish" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Survey_surveyquestion" Member="surveyquestions" ThisKey="Id" OtherKey="SurveyID" Type="surveyquestion" />
+      <Association Name="Survey_surveyresponse" Member="surveyresponses" ThisKey="Id" OtherKey="SurveyID" Type="surveyresponse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.survpart" Member="survparts">
+    <Type Name="survpart">
+      <Column Name="Title" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedOn" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ExpiresOn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedBy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Publish" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="OrderId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuestionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SurveyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Options" Type="System.String" DbType="VarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="QuestionType" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Text" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.surveyresponse" Member="surveyresponses">
+    <Type Name="surveyresponse">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SurveyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QuestionID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Response" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="FilledBy" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="question_surveyresponse" Member="question" ThisKey="QuestionID" OtherKey="Id" Type="question" IsForeignKey="true" />
+      <Association Name="Survey_surveyresponse" Member="Survey" ThisKey="SurveyID" OtherKey="Id" Type="Survey" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

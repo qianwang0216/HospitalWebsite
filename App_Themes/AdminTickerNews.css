@@ -1,0 +1,20 @@
+﻿.ticker-news-item {
+width: 270px;
+height: 200px;
+border: 1px solid black;
+margin: 5px;
+padding: 5px;
+position: relative;
+}
+.add-ticker-news {
+width: 270px;
+margin: 5px;
+padding: 5px;
+}
+.ticker-news-item .buttons {
+position: absolute;
+bottom: 5px;
+}
+.bold {
+font-weight: bold;
+}
